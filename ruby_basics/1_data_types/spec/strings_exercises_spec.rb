@@ -2,9 +2,7 @@ require 'spec_helper'
 require_relative '../exercises/string_exercises'
 
 RSpec.describe 'String Exercises' do
-
   describe 'concatenation example exercise' do
-
     it 'returns "Classic Ruby"' do
       expect(concatenate_example('Ruby')).to eq('Classic Ruby')
     end
