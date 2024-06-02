@@ -6,7 +6,5 @@ on:
       - main
 
 jobs:
-  call-workflow:
-    uses: romeovs/lcov-reporter-action@v0.3.1
-    with:
-      lcov-file: ./coverage/lcov.info
+  my_first_job:
+    name: My first job
