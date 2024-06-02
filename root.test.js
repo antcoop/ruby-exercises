@@ -1,9 +1,4 @@
-const increment = (num) => {
-  if (num === 10) {
-    return num * 10;
-  }
-  return num;
-}
+const { increment } = require('./root.js');
 
 describe('Root', () => {
   test('increments by 1', () => {

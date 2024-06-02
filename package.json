@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "## About this repository",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "jest",
     "cov": "jest --coverage"
