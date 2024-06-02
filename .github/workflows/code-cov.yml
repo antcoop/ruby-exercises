@@ -1,3 +1,27 @@
+name: Coverage Report
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on:
+  pull_request:
+    branches:
+      - '**'
+
 jobs:
-  my_first_job:
-    name: My first job
+  pr_tests:
+    name: PR Tests
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Node
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'nmp'
+      - name: Dependencies
+        run: npm ci
+      - name: Test With Coverage
+        run: npm run cov
+      - name: Coverage Reporter
+        uses: romeovs/lcov-reporter-action@v0.3.1
+        with:
+          lcov-file: ./coverage/lcov.info 
+    
