@@ -1,0 +1,17 @@
+{
+  "name": "ruby-exercises",
+  "version": "1.0.0",
+  "description": "## About this repository",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "cov": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
